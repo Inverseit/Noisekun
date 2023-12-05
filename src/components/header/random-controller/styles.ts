@@ -8,6 +8,7 @@ export const soundButton = tv({
       light: /*tw:*/ 'text-light-foreground',
       'blue-room': /*tw:*/ 'text-blue-room',
       train: /*tw:*/ 'text-train',
+      nirvana: /*tw:*/ 'text-nirvana',
       waterfall: /*tw:*/ 'text-waterfall',
       'camping-fire': /*tw:*/ 'text-camping-fire'
     }

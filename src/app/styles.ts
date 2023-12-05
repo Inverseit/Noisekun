@@ -9,6 +9,7 @@ export const container = tv({
       light: /*tw:*/ 'bg-light-background',
       'blue-room': /*tw:*/ 'before:bg-blue-room-gif before:brightness-50',
       train: /*tw:*/ 'before:bg-train-gif before:brightness-50',
+      nirvana: /*tw:*/ 'before:bg-nirvana-gif before:brightness-50',
       waterfall: /*tw:*/ 'before:bg-waterfall-gif before:brightness-50',
       'camping-fire': /*tw:*/ 'before:bg-camping-fire-gif before:brightness-50'
     }

@@ -13,6 +13,8 @@ export const soundButton = tv({
         /*tw:*/ 'text-blue-room/90 md:hover:bg-blue-room/10 disabled:hover:bg-transparent',
       train:
         /*tw:*/ 'text-train/90 md:hover:bg-train/10 disabled:hover:bg-transparent',
+      nirvana:
+        /*tw:*/ 'text-nirvana/90 md:hover:bg-nirvana/10 disabled:hover:bg-transparent',
       waterfall:
         /*tw:*/ 'text-waterfall/90 md:hover:bg-waterfall/10 disabled:hover:bg-transparent',
       'camping-fire':
@@ -56,6 +58,11 @@ export const soundButton = tv({
       active: true,
       theme: 'train',
       class: /*tw:*/ 'md:bg-train/10'
+    },
+    {
+      active: true,
+      theme: 'nirvana',
+      class: /*tw:*/ 'md:bg-nirvana/10'
     },
     {
       active: true,

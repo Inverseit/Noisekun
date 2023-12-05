@@ -54,6 +54,10 @@ export function ThemeMenu() {
     {
       title: 'Camping Fire',
       id: 'camping-fire'
+    },
+    {
+      title: 'Nirvana',
+      id: 'nirvana'
     }
   ]
 

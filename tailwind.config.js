@@ -23,6 +23,7 @@ module.exports = {
         'light-foreground': colors.gray[950],
         'blue-room': colors.blue[200],
         train: colors.green[200],
+        nirvana: colors.yellow[300],
         waterfall: colors.lime[200],
         'camping-fire': colors.orange[200]
       },
@@ -33,6 +34,7 @@ module.exports = {
       backgroundImage: {
         'blue-room-gif': 'url("/bg/blue-room.gif")',
         'train-gif': 'url("/bg/train.gif")',
+        'nirvana-gif': 'url("/bg/nirvana.gif")',
         'waterfall-gif': 'url("/bg/waterfall.gif")',
         'camping-fire-gif': 'url("/bg/camping-fire.gif")'
       },

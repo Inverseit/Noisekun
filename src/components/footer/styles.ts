@@ -8,6 +8,7 @@ export const container = tv({
       dark: /*tw:*/ 'text-dark-foreground',
       'blue-room': /*tw:*/ 'text-blue-room',
       train: /*tw:*/ 'text-train',
+      nirvana: /*tw:*/ 'text-nirvana',
       waterfall: /*tw:*/ 'text-waterfall',
       light: /*tw:*/ 'text-light-foreground',
       'camping-fire': /*tw:*/ 'text-camping-fire'
@@ -23,6 +24,7 @@ export const version = tv({
       'blue-room':
         /*tw:*/ 'text-blue-room/60 hover:text-blue-room active:text-blue-room',
       train: /*tw:*/ 'text-train/60 hover:text-train active:text-train',
+      nirvana: /*tw:*/ 'text-nirvana/60 hover:text-nirvana active:text-nirvana',
       waterfall:
         /*tw:*/ 'text-waterfall/60 hover:text-waterfall active:text-waterfall',
       light:

@@ -12,6 +12,8 @@ export const actionButton = tv({
         /*tw:*/ 'text-blue-room bg-blue-room/5 hover:bg-blue-room/20 active:bg-blue-room/10 disabled:bg-blue-room/5',
       train:
         /*tw:*/ 'text-train bg-train/5 hover:bg-train/20 active:bg-train/10 disabled:bg-train/5',
+      nirvana:
+        /*tw:*/ 'text-nirvana bg-nirvana/5 hover:bg-nirvana/20 active:bg-nirvana/10 disabled:bg-nirvana/5',
       waterfall:
         /*tw:*/ 'text-waterfall bg-waterfall/5 hover:bg-waterfall/20 active:bg-waterfall/10 disabled:bg-waterfall/5',
       'camping-fire':
