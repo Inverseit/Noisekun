@@ -1,4 +1,26 @@
-import { calculateVolumeSteps } from '@/components/header/random-controller'
+import { calculateVolumeSteps, RandomModeButton } from '.'
+import React from 'react'
+import { render, screen } from '@testing-library/react'
+import '@testing-library/jest-dom'
+
+jest.mock('../../../stores/random-mode-store', () => ({
+  useGlobalRandomModeStore: () => ({
+    randomMode: false,
+    setRandomMode: jest.fn()
+  })
+}))
+
+describe('RandomModeButton', () => {
+  it('should render correctly', () => {
+    render(<RandomModeButton />)
+
+    const button = screen.getByRole('button', {
+      name: /Enable\/Disable Random Mode/i
+    })
+
+    expect(button).toBeInTheDocument()
+  })
+})
 
 describe('calculateVolumeSteps tests', () => {
   test('calculates volume steps correctly for regular inputs', () => {

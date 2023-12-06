@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { FiZap, FiZapOff } from 'react-icons/fi'
 
-import { useThemeStore } from '@/stores/theme-store'
-import { volumeControllerInput as randomControllerInput } from '@/shared/styles/volume-controller-input'
+import { useThemeStore } from '../../../stores/theme-store'
+import { volumeControllerInput as randomControllerInput } from '../../../shared/styles/volume-controller-input'
 import { soundButton } from './styles'
-import { useGlobalRandomModeStore } from '@/stores/random-mode-store'
-import { useSoundsStateStore } from '@/stores/sounds-state-store'
+import { useGlobalRandomModeStore } from '../../../stores/random-mode-store'
+import { useSoundsStateStore } from '../../../stores/sounds-state-store'
 
 // Calculate Target Volumes and out for testing purposes
 export const calculateVolumeSteps = (currentVolume, targetVolume, steps) => {
@@ -47,36 +47,45 @@ export function RandomModeButton() {
   }
 
   // Apply Volumes with Timeouts
-  function applyVolumeChanges(sounds, stepDuration) {
+  function applyVolumeChanges(stepDuration) {
     clearAllTimeouts() // Clears existing timeouts
 
-    sounds.forEach(sound => {
-      if (sound.active) {
+    soundsRef.current
+      .filter(sound => sound.active)
+      .forEach(initialSound => {
         const targetVolume = Math.random()
-        const volumeSteps = calculateVolumeSteps(sound.volume, targetVolume, 5)
+        const volumeSteps = calculateVolumeSteps(
+          initialSound.volume,
+          targetVolume,
+          NUM_STEPS
+        )
 
-        volumeSteps.forEach((newVolume, index) => {
-          const timeoutId = setTimeout(
-            () => {
-              const updatedSound = { ...sound, volume: newVolume }
+        const setVolumeStep = (sound, index) => {
+          if (index < volumeSteps.length) {
+            // Fetch the most recent value of the sound
+            const currentSound = soundsRef.current.find(s => s.id === sound.id)
+            if (currentSound && currentSound.active) {
+              const updatedVolume = volumeSteps[index]
+              const updatedSound = { ...currentSound, volume: updatedVolume }
               setSound(updatedSound)
-            },
-            (index + 1) * stepDuration
-          )
+              // add next timeout only if this one is successfull
+              const timeoutId = setTimeout(() => {
+                setVolumeStep(currentSound, index + 1)
+              }, stepDuration)
 
-          timeoutsRef.current.push(timeoutId)
-        })
-      }
-    })
+              timeoutsRef.current.push(timeoutId)
+            }
+          }
+        }
+
+        setVolumeStep(initialSound, 0)
+      })
   }
 
   function randomizeVolumes() {
     // Total duration for volume change
-    const transitionDuration = TOTAL_TRANSITION
-    const stepDuration = transitionDuration / NUM_STEPS
-
-    const activeSounds = soundsRef.current.filter(sound => sound.active)
-    applyVolumeChanges(activeSounds, stepDuration)
+    const stepDuration = TOTAL_TRANSITION / NUM_STEPS
+    applyVolumeChanges(stepDuration)
   }
 
   useEffect(() => {
