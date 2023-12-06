@@ -8,6 +8,7 @@ export const triggerButton = tv({
       dark: /*tw:*/ 'text-dark-foreground',
       'blue-room': /*tw:*/ 'text-blue-room',
       train: /*tw:*/ 'text-train',
+      nirvana: /*tw:*/ 'text-nirvana',
       waterfall: /*tw:*/ 'text-waterfall',
       light: /*tw:*/ 'text-light-foreground',
       'camping-fire': /*tw:*/ 'text-camping-fire'
@@ -29,6 +30,7 @@ export const themeButton = tv({
       dark: /*tw:*/ 'bg-dark-background',
       'blue-room': /*tw:*/ 'bg-blue-room-gif',
       train: /*tw:*/ 'bg-train-gif',
+      nirvana: /*tw:*/ 'bg-nirvana-gif',
       waterfall: /*tw:*/ 'bg-waterfall-gif',
       light: /*tw:*/ 'bg-light-background',
       'camping-fire': /*tw:*/ 'bg-camping-fire-gif'
@@ -39,6 +41,7 @@ export const themeButton = tv({
       light: /*tw:*/ 'text-light-foreground/80',
       'blue-room': /*tw:*/ 'text-blue-room/80',
       train: /*tw:*/ 'text-train/80',
+      nirvana: /*tw:*/ 'text-nirvana/80',
       waterfall: /*tw:*/ 'text-waterfall/80',
       'camping-fire': /*tw:*/ 'text-camping-fire/80'
     }
@@ -83,6 +86,16 @@ export const themeButton = tv({
       theme: ['train'],
       selected: true,
       class: /*tw:*/ 'border-train text-train'
+    },
+    {
+      theme: ['nirvana'],
+      active: true,
+      class: /*tw:*/ 'border-nirvana/80 text-nirvana/80'
+    },
+    {
+      theme: ['nirvana'],
+      selected: true,
+      class: /*tw:*/ 'border-nirvana text-nirvana'
     },
     {
       theme: ['waterfall'],

@@ -70,11 +70,11 @@ export function Footer() {
         </section>
       </div>
       <a
-        href={`https://github.com/mateusfg7/Noisekun/releases/tag/${packageJson.version}`}
+        href={`https://github.com/Inverseit/Noisekun`}
         className={version({ theme })}
         data-umami-event="Version Link"
       >
-        {packageJson.version}
+        {packageJson.version} extended by Nirvana CMUQ
       </a>
     </footer>
   )

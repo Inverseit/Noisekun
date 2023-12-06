@@ -11,6 +11,7 @@ export const input = tv({
       'blue-room':
         /*tw:*/ 'text-blue-room placeholder:text-blue-room/60 bg-blue-room/5',
       train: /*tw:*/ 'text-train placeholder:text-train/60 bg-train/5',
+      nirvana: /*tw:*/ 'text-nirvana placeholder:text-nirvana/60 bg-nirvana/5',
       waterfall:
         /*tw:*/ 'text-waterfall placeholder:text-waterfall/60 bg-waterfall/5',
       'camping-fire':

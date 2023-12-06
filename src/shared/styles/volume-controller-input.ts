@@ -16,7 +16,9 @@ export const volumeControllerInput = tv({
       waterfall:
         /*tw:*/ 'bg-waterfall/30 from-waterfall to-waterfall [&::-moz-range-thumb]:bg-waterfall [&::-webkit-slider-thumb]:bg-waterfall',
       'camping-fire':
-        /*tw:*/ 'bg-camping-fire/30 from-camping-fire to-camping-fire [&::-moz-range-thumb]:bg-camping-fire [&::-webkit-slider-thumb]:bg-camping-fire'
+        /*tw:*/ 'bg-camping-fire/30 from-camping-fire to-camping-fire [&::-moz-range-thumb]:bg-camping-fire [&::-webkit-slider-thumb]:bg-camping-fire',
+      nirvana:
+        /*tw:*/ 'bg-nirvana/30 from-nirvana to-nirvana [&::-moz-range-thumb]:bg-nirvana [&::-webkit-slider-thumb]:bg-nirvana'
     }
   }
 })

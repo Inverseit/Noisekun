@@ -9,6 +9,7 @@ export const triggerButton = tv({
       'blue-room': /*tw:*/ 'text-blue-room',
       train: /*tw:*/ 'text-train',
       waterfall: /*tw:*/ 'text-waterfall',
+      nirvana: /*tw:*/ 'text-nirvana',
       light: /*tw:*/ 'text-light-foreground',
       'camping-fire': /*tw:*/ 'text-camping-fire'
     }
@@ -24,6 +25,7 @@ export const comboButton = tv({
       light: /*tw:*/ 'text-light-foreground bg-light-foreground/5',
       'blue-room': /*tw:*/ 'text-blue-room bg-blue-room/5',
       train: /*tw:*/ 'text-train bg-train/5',
+      nirvana: /*tw:*/ 'text-nirvana bg-nirvana/5',
       waterfall: /*tw:*/ 'text-waterfall bg-waterfall/5',
       'camping-fire': /*tw:*/ 'text-camping-fire bg-camping-fire/5'
     },
@@ -53,6 +55,11 @@ export const comboButton = tv({
       class: /*tw:*/ 'bg-train/20'
     },
     {
+      theme: 'nirvana',
+      active: true,
+      class: /*tw:*/ 'bg-nirvana/20'
+    },
+    {
       theme: 'waterfall',
       active: true,
       class: /*tw:*/ 'bg-waterfall/20'
@@ -75,6 +82,7 @@ export const editButton = tv({
       light: /*tw:*/ 'hover:from-light-foreground/20 hover:to-red-600/20',
       'blue-room': /*tw:*/ 'hover:from-blue-room/20 hover:to-red-600/20',
       train: /*tw:*/ 'hover:from-train/20 hover:to-red-600/20',
+      nirvana: /*tw:*/ 'hover:from-nirvana/20 hover:to-red-600/20',
       waterfall: /*tw:*/ 'hover:from-waterfall/20 hover:to-red-600/20',
       'camping-fire': /*tw:*/ 'hover:from-camping-fire/20 hover:to-red-600/20'
     },
@@ -93,6 +101,7 @@ export const toggleEditContainer = tv({
       light: /*tw:*/ 'bg-light-foreground/5 text-light-foreground',
       'blue-room': /*tw:*/ 'bg-blue-room/5 text-blue-room',
       train: /*tw:*/ 'bg-train/5 text-train',
+      nirvana: /*tw:*/ 'bg-nirvana/5 text-nirvana',
       waterfall: /*tw:*/ 'bg-waterfall/5 text-waterfall',
       'camping-fire': /*tw:*/ 'bg-camping-fire/5 text-camping-fire'
     }
@@ -108,6 +117,7 @@ export const toggleEditButton = tv({
       light: /*tw:*/ 'hover:bg-light-foreground/10',
       'blue-room': /*tw:*/ 'hover:bg-blue-room/10',
       train: /*tw:*/ 'hover:bg-train/10',
+      nirvana: /*tw:*/ 'hover:bg-nirvana/10',
       waterfall: /*tw:*/ 'hover:bg-waterfall/10',
       'camping-fire': /*tw:*/ 'hover:bg-camping-fire/10'
     },

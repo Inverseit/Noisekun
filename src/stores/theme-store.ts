@@ -8,6 +8,7 @@ export type Theme =
   | 'train'
   | 'waterfall'
   | 'camping-fire'
+  | 'nirvana'
 
 type States = { theme: Theme }
 type Actions = { setTheme: (newTheme: Theme) => void }

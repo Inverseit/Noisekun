@@ -9,6 +9,7 @@ import {
   Fire,
   Leaves,
   Night,
+  Nirvana,
   PinkNoise,
   Playground,
   Rain,
@@ -229,6 +230,15 @@ export const sounds = [
     icon: PinkNoise,
     file: {
       url: 'https://cdn.noisekun.com/sounds/pink-noise.ogg',
+      type: 'audio/ogg'
+    }
+  },
+  {
+    id: 'nirvana',
+    title: 'Nirvana',
+    icon: Nirvana,
+    file: {
+      url: '/sounds/nirvana.ogg',
       type: 'audio/ogg'
     }
   }

@@ -9,6 +9,7 @@ export const container = tv({
       light: /*tw:*/ 'text-light-foreground',
       'blue-room': /*tw:*/ 'text-blue-room',
       train: /*tw:*/ 'text-train',
+      nirvana: /*tw:*/ 'text-nirvana',
       waterfall: /*tw:*/ 'text-waterfall',
       'camping-fire': /*tw:*/ 'text-camping-fire'
     }
@@ -27,6 +28,8 @@ export const controlButton = tv({
       'blue-room':
         /*tw:*/ 'bg-blue-room/10 hover:bg-blue-room/30 disabled:hover:bg-blue-room/10',
       train: /*tw:*/ 'bg-train/10 hover:bg-train/30 disabled:hover:bg-train/10',
+      nirvana:
+        /*tw:*/ 'bg-nirvana/10 hover:bg-nirvana/30 disabled:hover:bg-nirvana/10',
       waterfall:
         /*tw:*/ 'bg-waterfall/10 hover:bg-waterfall/30 disabled:hover:bg-waterfall/10',
       'camping-fire':
@@ -50,6 +53,8 @@ export const display = tv({
       'blue-room':
         /*tw:*/ 'bg-blue-room/10 hover:bg-blue-room/30 disabled:hover:bg-blue-room/10',
       train: /*tw:*/ 'bg-train/10 hover:bg-train/30 disabled:hover:bg-train/10',
+      nirvana:
+        /*tw:*/ 'bg-nirvana/10 hover:bg-nirvana/30 disabled:hover:bg-nirvana/10',
       waterfall:
         /*tw:*/ 'bg-waterfall/10 hover:bg-waterfall/30 disabled:hover:bg-waterfall/10',
       'camping-fire':
@@ -71,6 +76,7 @@ export const minuteConfigInput = tv({
         /*tw:*/ 'focus:border-light-foreground focus:ring-light-foreground',
       'blue-room': /*tw:*/ 'focus:border-blue-room focus:ring-blue-room',
       train: /*tw:*/ 'focus:border-train focus:ring-train',
+      nirvana: /*tw:*/ 'focus:border-nirvana focus:ring-nirvana',
       waterfall: /*tw:*/ 'focus:border-waterfall focus:ring-waterfall',
       'camping-fire':
         /*tw:*/ 'focus:border-camping-fire focus:ring-camping-fire'
